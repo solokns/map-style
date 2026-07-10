@@ -296,8 +296,9 @@
       "minzoom": 0,
       "filter": [
         "all",
-        ["==", "$type", "LineString"],
-        ["all", ["==", "class", "rail"], ["has", "service"]]
+        ["==", ["geometry-type"], "LineString"],
+        ["==", ["get", "class"], "rail"],
+        ["has", "service"]
       ],
       "layout": {"line-join": "round", "visibility": "none"},
       "paint": {
@@ -365,8 +366,9 @@
       "maxzoom": 0,
       "filter": [
         "all",
-        ["==", "$type", "LineString"],
-        ["all", ["==", "class", "transit"], ["!in", "brunnel", "tunnel"]]
+        ["==", ["geometry-type"], "LineString"],
+        ["==", ["get", "class"], "transit"],
+        ["!=", ["get", "brunnel"], "tunnel"]
       ],
       "layout": {"line-join": "round", "visibility": "visible"},
       "paint": {
