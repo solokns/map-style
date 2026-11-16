@@ -1495,7 +1495,7 @@
       "type": "symbol",
       "source": "openmaptiles",
       "source-layer": "place",
-      "minzoom": 5.5,
+      "minzoom": 4.5,
       "maxzoom": 18,
       "filter": ["all", ["==", "$type", "Point"], ["==", "class", "city"], ["==", "capital", 4]],
       "layout": {
