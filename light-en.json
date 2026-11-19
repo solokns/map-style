@@ -1681,39 +1681,6 @@
       }
     },
     {
-      "id": "city_label_mur",
-      "type": "symbol",
-      "source": "openmaptiles",
-      "source-layer": "place",
-      "minzoom": 0,
-      "maxzoom": 18,
-      "filter": [
-        "all",
-        ["==", "$type", "Point"],
-        ["==", "class", "city"],
-        ["==", "name", "Мурманск"]
-      ],
-      "layout": {
-        "text-anchor": "top",
-        "text-field": ["coalesce", ["get", "name:en"], ["get", "name:latin"], ["get", "name"]],
-        "text-font": ["Inter-Bold"],
-        "text-size": 12,
-        "visibility": "none",
-        "text-rotation-alignment": "viewport",
-        "icon-size": 0.5,
-        "text-offset": [0, 1],
-        "icon-image": "umba"
-      },
-      "paint": {
-        "text-color": "rgba(24, 29, 37, 1)",
-        "text-halo-blur": 0,
-        "text-halo-color": "rgba(238, 242, 250, 1)",
-        "text-halo-width": 2,
-        "icon-color": "rgba(238, 242, 250, 1)",
-        "icon-halo-color": "rgba(7, 11, 29, 1)"
-      }
-    },
-    {
       "id": "city_label_oms",
       "type": "symbol",
       "source": "openmaptiles",
